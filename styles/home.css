@@ -1,0 +1,81 @@
+
+
+#app {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+section.image-container {
+  height: 100%;
+  width: 50%;
+  background-image: url('../assets/bg.png');
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+main.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  max-width: 700px;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+}
+
+main.introduction h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--title);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+main.introduction p {
+  font-size: 1.5rem;
+  color: var(--text);
+  line-height: 1.6;
+  text-align: center;
+}
+
+main.introduction a {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 23.75rem;
+  height: 5rem;
+  background: var(--main);
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+@media (max-width: 1340px) {
+    main.introduction {
+     max-width: 400px;
+    }
+
+    section.image-container {
+      width: 60%;
+    }
+        
+    main.introduction p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    main.introduction h1 {
+      font-size: 4rem;
+    }
+
+}

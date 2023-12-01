@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f5f8fa;
+  --title: #123952;
+  --text: #617480;
+  --text-light: #A0ACB2;
+  --main: #F25D27;
+  --secondary: #51B853;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Barlow', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 93.75%;
+  }
+
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
