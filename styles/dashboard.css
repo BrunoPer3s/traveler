@@ -1,0 +1,121 @@
+#page {
+  display: flex;
+  height: 100%;
+}
+
+#dashboard {
+  max-width: 70rem;
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+aside {
+  width: 6rem;
+  height: 100%;
+  background: var(--main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5625rem 0;
+}
+
+aside img {
+  width: 22px;
+  height: 48px;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside nav a {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+aside nav a+a {
+  margin-top: 1.5rem;
+}
+
+aside i {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+header.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5625rem 0;
+}
+
+header.dash-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary);
+  color: white;
+  font-family: Heebo;
+  font-weight: 500;
+  line-height: 1.625rem;
+  padding: 0.6875rem 2rem;
+  border-radius: 10px;
+}
+
+main.gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 1.875rem;
+  justify-content: space-evenly;
+}
+
+div.card {
+  width: 16rem;
+  height: 16.625rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-bottom: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--shapes-02, #DCE2E5);
+  overflow: hidden;
+}
+
+div.card h2 {
+  color: var(--title);
+  font-family: Barlow;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+div.card span {
+  color: var(--text-light);
+  font-family: Roboto;
+  line-height: 1.75rem;
+}
+
+div.card .info {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+@media (max-width: 78.75rem) {
+  #dashboard {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  main.gallery {
+    gap: 3rem;
+  }
+}
