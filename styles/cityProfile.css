@@ -1,0 +1,183 @@
+#page {
+  display: flex;
+  height: 100%;
+}
+
+#page-container {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 70rem;
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.reset-layer {
+  width: 6rem;
+}
+
+aside {
+  width: 6rem;
+  height: 100%;
+  background: var(--main);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5625rem 0;
+}
+
+aside img {
+  width: 22px;
+  height: 48px;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside nav a {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+aside nav a+a {
+  margin-top: 1.5rem;
+}
+
+aside i {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+header.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5625rem 0;
+}
+
+header.dash-header a.return-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #DCE2E5;
+}
+
+header.dash-header a.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--secondary);
+  color: white;
+  font-family: Heebo;
+  font-weight: 500;
+  line-height: 1.625rem;
+  padding: 0.6875rem 2rem;
+  border-radius: 10px;
+}
+
+section.backgroundImgContainer {
+  background: url("../assets/cityp.jpg");
+  background-size: cover;
+  background-position: top 65% right;
+  width: 100%;
+  height: 340px;
+}
+
+.city-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.city-info h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 3.125rem;
+  color: var(--title);
+}
+
+.city-info p {
+  color: var(--title);
+  max-width: 506px;
+  font-family: Heebo;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 40px 0 32px;
+}
+
+.city-info span {
+  color: var(--text);
+  display: inline-block;
+  max-width: 506px;
+  font-family: Heebo;
+  line-height: 26px;
+}
+
+.city-cards-info {
+  display: flex;
+  align-items: center;
+}
+
+.city-cards-info .info-card {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 268px;
+  padding: 32px 0;
+  border-radius: 20px;
+  border: 1px solid #DCE2E5;
+  background: #fff;
+}
+
+.info-card:nth-child(2) {
+  margin: 0 16px;
+}
+
+.info-card i {
+  font-size: 40px;
+  margin-left: 32px;
+  color: var(--main)
+}
+
+.info-card h4 {
+  margin: 32px 0;
+  padding-top: 32px;
+  padding-left: 32px;
+  border-top: 1px solid #DCE2E5;
+  color: var(--title);
+  font-family: Barlow;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.info-card span {
+  color: var(--text);
+  font-family: Heebo;
+  line-height: 22px;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 32px;
+  max-width: 90px;
+}
