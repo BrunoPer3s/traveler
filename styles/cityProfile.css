@@ -1,7 +1,8 @@
 #page {
   display: flex;
-  height: 100%;
+  padding-bottom: 2rem;
 }
+
 
 #page-container {
   width: 100%;
@@ -31,8 +32,8 @@ aside {
 }
 
 aside img {
-  width: 22px;
-  height: 48px;
+  width: 1.375rem;
+  height: 3rem;
 }
 
 aside nav {
@@ -44,8 +45,8 @@ aside nav {
 
 aside nav a {
   color: white;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 aside nav a+a {
@@ -63,7 +64,7 @@ header.dash-header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5625rem 0;
+  padding: 1.5625rem 1rem;
 }
 
 header.dash-header a.return-button {
@@ -75,8 +76,8 @@ header.dash-header a.return-button {
   font-weight: 500;
   line-height: 1.625rem;
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 10px;
   border: 1px solid #DCE2E5;
 }
@@ -100,18 +101,18 @@ section.backgroundImgContainer {
   background-size: cover;
   background-position: top 65% right;
   width: 100%;
-  height: 340px;
+  height: 21.25rem;
 }
 
 .city-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 80px;
+  margin: 5rem 0 7.5rem;
 }
 
 .city-info h1 {
-  font-size: 54px;
+  font-size: 3.375rem;
   font-weight: 600;
   line-height: 3.125rem;
   color: var(--title);
@@ -119,19 +120,19 @@ section.backgroundImgContainer {
 
 .city-info p {
   color: var(--title);
-  max-width: 506px;
+  max-width: 31.625rem;
   font-family: Heebo;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 40px 0 32px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin: 2.5rem 0 2rem;
 }
 
 .city-info span {
   color: var(--text);
   display: inline-block;
-  max-width: 506px;
+  max-width: 31.625rem;
   font-family: Heebo;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .city-cards-info {
@@ -142,42 +143,204 @@ section.backgroundImgContainer {
 .city-cards-info .info-card {
   display: flex;
   flex-direction: column;
-  width: 160px;
-  height: 268px;
-  padding: 32px 0;
+  width: 10rem;
+  height: 16.75rem;
+  padding: 2rem 0;
   border-radius: 20px;
   border: 1px solid #DCE2E5;
   background: #fff;
 }
 
 .info-card:nth-child(2) {
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .info-card i {
-  font-size: 40px;
-  margin-left: 32px;
+  font-size: 2.5rem;
+  margin-left: 2rem;
   color: var(--main)
 }
 
 .info-card h4 {
-  margin: 32px 0;
-  padding-top: 32px;
-  padding-left: 32px;
+  margin: 2rem 0;
+  padding-top: 2rem;
+  padding-left: 2rem;
   border-top: 1px solid #DCE2E5;
   color: var(--title);
   font-family: Barlow;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 2.5rem;
 }
 
 .info-card span {
   color: var(--text);
   font-family: Heebo;
-  line-height: 22px;
-  font-size: 14px;
+  line-height: 1.375rem;
+  font-size: 0.875rem;
   display: inline-block;
-  margin-left: 32px;
-  max-width: 90px;
+  margin-left: 2rem;
+  max-width: 5.625rem;
+}
+
+div.topRate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+main.city-container h3 {
+  color: var(--title);
+  font-family: Barlow;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.875rem; 
+}
+
+.place-card {
+  width: 16rem;
+  height: 19.1875rem;
+  border-radius: 16px;
+  border: 1px solid #DCE2E5;
+  background: #FFF;
+  overflow: hidden;
+}
+
+.place-card img {
+  width: 16rem;
+  height: 10rem;
+}
+
+.place-card p {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  color: var(--title);
+  font-family: Barlow;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5625rem;
+}
+
+.place-card footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-top: 1px solid #DCE2E5;
+}
+
+.place-card footer span {
+  color: var(--text);
+  font-family: Barlow;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+.place-card footer i {
+  color: var(--main);
+  font-size: 1.5rem;
+}
+
+div.highlight-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 17.875rem;
+  margin: 5rem 0;
+  border-radius: 16px;
+  border: 1px solid #DCE2E5;
+  background: #FFF;
+  overflow: hidden;
+}
+
+div.highlight-container > section {
+  padding: 2.875rem 2.875rem 2.875rem 4rem;
+  width: 50%;
+}
+
+div.highlight-container > section header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .tag i {
+  font-size: 1.5rem;
+  color: var(--main);
+}
+
+header .tag span {
+  display: inline-block;
+  margin-left: 1.5rem;
+  color: var(--text);
+  font-family: Barlow;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+div.highlight-container h2 {
+  color: var(--title);
+  font-family: Barlow;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  margin: 2rem 0 1rem;
+}
+
+div.highlight-container p {
+  color: var(--text);
+  font-family: Heebo;
+  line-height: 1.625rem;
+}
+
+header .emphasis {
+  width: 7.5rem;
+  height: 2rem;
+  background: var(--main);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+  border-radius: 100px;
+}
+
+header .emphasis span {
+  display: inline-block;
+  font-family: Barlow;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+div.highlight-container section + section {
+  background: url("../assets/highlight.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+main.city-container footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main.city-container footer .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.options span {
+  display: inline-block;
+  margin-left: auto;
+  color: var(--text);
+  font-family: Heebo;
+  line-height: 1.375rem;
 }
