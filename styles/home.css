@@ -60,9 +60,15 @@ main.introduction a {
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 650px){
   section.image-container{
     display: none;
+  }
+}
+
+@media(max-width: 1024px){
+  section.image-container{
+    background-image: url('../assets/bgcut.png');
   }
 }
 
