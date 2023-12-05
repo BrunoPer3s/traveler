@@ -1,6 +1,7 @@
 #page {
   display: flex;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 #page-container {
@@ -20,7 +21,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 5rem 0 7.5rem;
+  margin: 5rem 0 7.5rem; 
 }
 
 .city-info h1 {
@@ -58,9 +59,12 @@
   width: 10rem;
   height: 16.75rem;
   padding: 2rem 0;
-  border-radius: 20px;
-  border: 1px solid #DCE2E5;
+  /* border-radius: 20px; */
+  /* border: 1px solid #DCE2E5; */
   background: #fff;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
 }
 
 .info-card:nth-child(2) {
@@ -69,14 +73,14 @@
 
 .info-card i {
   font-size: 2.5rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   color: var(--main)
 }
 
 .info-card h4 {
   margin: 2rem 0;
   padding-top: 2rem;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   border-top: 1px solid #DCE2E5;
   color: var(--title);
   font-family: Barlow;
@@ -91,8 +95,9 @@
   line-height: 1.375rem;
   font-size: 0.875rem;
   display: inline-block;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   max-width: 5.625rem;
+  text-align: center;
 }
 
 .topRate {
@@ -259,4 +264,26 @@ main.city-container footer .options {
   color: var(--text);
   font-family: Heebo;
   line-height: 1.375rem;
+}
+
+@media(max-width: 800px){
+.city-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5r
+  em 0 7.5rem; 
+}
+
+.city-cards-info .info-card {
+  border-radius: 20px;
+  width: 7rem;
+  height: 15rem;
+  flex-direction: column;
+}
+
+.info-card h4 {
+  font-size: 2rem;
+  height: 3rem;
+}
 }
