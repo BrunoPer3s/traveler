@@ -59,8 +59,8 @@
   width: 10rem;
   height: 16.75rem;
   padding: 2rem 0;
-  /* border-radius: 20px; */
-  /* border: 1px solid #DCE2E5; */
+  border-radius: 20px;
+  border: 1px solid #DCE2E5;
   background: #fff;
   overflow: hidden;
   align-items: center;
@@ -274,8 +274,7 @@ main.city-container footer .options {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 5r
-    em 0 7.5rem; 
+    margin: 5rem 0 7.5rem; 
   }
 
   .city-cards-info .info-card {
@@ -283,6 +282,11 @@ main.city-container footer .options {
     width: 7rem;
     height: 15rem;
     flex-direction: column;
+  }
+
+  .city-info {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .info-card h4 {
@@ -309,6 +313,10 @@ main.city-container footer .options {
 @media(max-width: 380px){
   div.highlight-container {
     height: 45rem;
+  }
+
+  main.city-container > h3 {
+    text-align: center;
   }
 
   div.highlight-container section + section {
