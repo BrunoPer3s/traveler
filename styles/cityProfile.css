@@ -171,12 +171,13 @@ div.highlight-container {
   border-radius: 16px;
   border: 1px solid #DCE2E5;
   background: #FFF;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div.highlight-container > section {
   padding: 2.875rem 2.875rem 2.875rem 4rem;
   width: 50%;
+  overflow: hidden;
 }
 
 div.highlight-container > section header {
@@ -266,24 +267,51 @@ main.city-container footer .options {
   line-height: 1.375rem;
 }
 
+
+
 @media(max-width: 800px){
-.city-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 5r
-  em 0 7.5rem; 
+  .city-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5r
+    em 0 7.5rem; 
+  }
+
+  .city-cards-info .info-card {
+    border-radius: 20px;
+    width: 7rem;
+    height: 15rem;
+    flex-direction: column;
+  }
+
+  .info-card h4 {
+    font-size: 2rem;
+    height: 3rem;
+  }
+
+  div.highlight-container {
+    flex-direction: column;
+    height: 30rem;
+  }
+
+  div.highlight-container > section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  div.highlight-container section + section {
+    max-height: 40%;
+    background-position:center left;
+  }
 }
 
-.city-cards-info .info-card {
-  border-radius: 20px;
-  width: 7rem;
-  height: 15rem;
-  flex-direction: column;
-}
+@media(max-width: 380px){
+  div.highlight-container {
+    height: 45rem;
+  }
 
-.info-card h4 {
-  font-size: 2rem;
-  height: 3rem;
-}
+  div.highlight-container section + section {
+    max-height: 35%;
+  }
 }
