@@ -168,8 +168,16 @@ section.reset-layer {
   #dashboard, #page-container, #city-container wrapper{
     margin-top: 6rem;
     height: 100%;
+  }
+
+  #page-container, #city-container wrapper{
     margin-left: 0;
   }
+  
+  #dashboard{
+    margin: 6rem auto auto auto;
+  }
+
 
   aside nav a + a{
     margin-top: 0px;
