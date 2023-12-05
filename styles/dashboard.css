@@ -52,10 +52,12 @@ div.card .info {
 @media (max-width: 78.75rem) {
   #dashboard {
     max-width: 60rem;
-    margin: 0 auto;
+    
+    margin: auto;
   }
 
   main.gallery {
     gap: 3rem;
   }
+
 }

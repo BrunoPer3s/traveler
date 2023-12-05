@@ -128,6 +128,15 @@ header.dash-header a.add-button {
   border-radius: 10px;
 }
 
+section.reset-layer {
+  display: none;
+}
+
+.all{
+  margin-left: 6rem;
+  width: 100%;
+}
+
 @media (max-width: 1024px){
   aside {
     width: 100%;
@@ -152,9 +161,14 @@ header.dash-header a.add-button {
     min-width: 4rem;
   }
 
+  .all{
+    margin-left: 0;
+  }
+
   #dashboard, #page-container, #city-container wrapper{
     margin-top: 6rem;
     height: 100%;
+    margin-left: 0;
   }
 
   aside nav a + a{
@@ -168,6 +182,12 @@ header.dash-header a.add-button {
 
   section.reset-layer {
     display: none;
+  }
+
+  @media(max-width: 380px){
+    html {
+      font-size: 70%;
+    }
   }
   
 }
