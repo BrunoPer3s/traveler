@@ -322,12 +322,6 @@ main.city-container footer .options {
 
 
 @media(max-width: 380px){
-  
-  div.highlight-container {
-    /* height: 30rem; */
-    /* margin-bottom: 35%; */
-  }
-
   main.city-container > h3 {
     text-align: center;
   }
