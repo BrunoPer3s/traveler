@@ -82,7 +82,6 @@ aside i {
 
 section.reset-layer {
   width: 6rem;
-  border: 2px solid blue;
 }
 
 .wrapper {
@@ -147,7 +146,6 @@ header.dash-header a.add-button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: red 1px solid;
   }
 
   aside img{
@@ -156,7 +154,7 @@ header.dash-header a.add-button {
 
   #dashboard, #page-container, #city-container wrapper{
     margin-top: 6rem;
-    border: red 1px solid;
+    height: 100%;
   }
 
   aside nav a + a{
