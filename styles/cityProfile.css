@@ -80,7 +80,6 @@
 .info-card h4 {
   margin: 2rem 0;
   padding-top: 2rem;
-  /* padding-left: 2rem; */
   border-top: 1px solid #DCE2E5;
   color: var(--title);
   font-family: Barlow;
@@ -95,7 +94,6 @@
   line-height: 1.375rem;
   font-size: 0.875rem;
   display: inline-block;
-  /* margin-left: 2rem; */
   max-width: 5.625rem;
   text-align: center;
 }
@@ -171,7 +169,7 @@ div.highlight-container {
   border-radius: 16px;
   border: 1px solid #DCE2E5;
   background: #FFF;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 div.highlight-container > section {
@@ -265,6 +263,8 @@ main.city-container footer .options {
   color: var(--text);
   font-family: Heebo;
   line-height: 1.375rem;
+  text-align: center;
+  padding-left: 0.5rem;
 }
 
 
@@ -302,11 +302,16 @@ main.city-container footer .options {
   div.highlight-container > section {
     width: 100%;
     overflow: hidden;
+    height: 60%;
   }
 
   div.highlight-container section + section {
-    max-height: 40%;
+    height: 40%;
     background-position:center left;
+  }
+  
+  main.city-container footer .options {
+    min-width: 25rem;
   }
 }
 
@@ -321,5 +326,21 @@ main.city-container footer .options {
 
   div.highlight-container section + section {
     max-height: 35%;
+  }
+}
+
+@media(max-width: 650px){
+  footer.filter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer.filter h3{
+    padding-bottom: 1rem;
+  }
+
+  main.city-container footer .options span{
+    text-align: center;
   }
 }
