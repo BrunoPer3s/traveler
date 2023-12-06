@@ -240,9 +240,9 @@ footer.rates {
   margin-top: 16px;
 }
 
-.all{
+/* .all{
   display: flex;
-}
+} */
 
 @media(max-width: 1024px){
   main.city-container{
