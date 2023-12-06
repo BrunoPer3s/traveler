@@ -11,10 +11,6 @@ form {
   margin-top: 48px;
 }
 
-header.dash-header a.contact {
-  background-color: var(--main);
-}
-
 form h2 {
   color: var(--heading);
   font-family: Barlow;
@@ -44,15 +40,6 @@ div.input {
   width: 100%;
 }
 
-div.sameline .input+.input {
-  width: 30%;
-}
-
-div.sameline {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
 
 label {
   color: var(--text);
@@ -60,8 +47,7 @@ label {
   font-family: Roboto;
 }
 
-input,
-select {
+input {
   height: 3.5rem;
   border-radius: 0.5rem;
   background: var(--bgColor);
@@ -70,10 +56,6 @@ select {
   padding: 0 1rem;
   font-size: 1rem;
   border: 1px solid #DCE2E5;
-}
-
-input[name='number'] {
-  width: 100%;
 }
 
 section header {
@@ -94,39 +76,9 @@ button {
   text-transform: uppercase;
 }
 
-.short-select {
-  width: 50%;
-}
-
-.input-radio {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.input-radio input {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  border: 1px solid #DCE2E5;
-  background: var(--bgColor);
-  margin-right: 1rem;
-
-}
-
-.radio-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.sameline:last-child {
-  align-items: flex-start;
-}
-
-.sameline:last-child .input {
-  height: 100%;
+button + button {
+  background-color: var(--main);
+  margin-left: 1rem;
 }
 
 textarea {

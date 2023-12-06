@@ -92,6 +92,11 @@ header.dash-header {
   padding: 1.5625rem 1rem;
 }
 
+header.dash-header nav {
+  display: flex;
+  align-items: center;
+}
+
 header.dash-header a.return-button {
   display: flex;
   align-items: center;
@@ -119,6 +124,11 @@ header.dash-header a.add-button {
   line-height: 1.625rem;
   padding: 0.6875rem 2rem;
   border-radius: 10px;
+}
+
+header.dash-header a.add-button + a.add-button {
+  background-color: var(--main);
+  margin-left: 1rem;
 }
 
 /* section.reset-layer {
