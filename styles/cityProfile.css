@@ -238,7 +238,7 @@ header .emphasis span {
 }
 
 div.highlight-container section + section {
-  background: url("../assets/highlight.jpg");
+  /* background: url("../assets/highlight.jpg"); */
   background-size: cover;
   height: 100%;
 }

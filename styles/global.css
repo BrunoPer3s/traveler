@@ -131,15 +131,6 @@ header.dash-header a.add-button + a.add-button {
   margin-left: 1rem;
 }
 
-/* section.reset-layer {
-  display: none;
-} */
-
-/* .all{
-  margin-left: 6rem;
-  width: 100%;
-} */
-
 @media (max-width: 1250px) {
   html {
     font-size: 87.5%;
@@ -170,17 +161,9 @@ header.dash-header a.add-button + a.add-button {
     min-width: 4rem;
   }
 
-  /* .all{
-    margin-left: 0;
-  } */
-
   #dashboard, #page-container, #city-container wrapper{
     margin-top: 6rem;
     height: 100%;
-  }
-
-  #page-container, #city-container wrapper{
-    /* margin-left: 0; */
   }
   
   #dashboard{
@@ -204,5 +187,11 @@ header.dash-header a.add-button + a.add-button {
 @media(max-width: 380px) {
   html {
     font-size: 70%;
+  }
+}
+
+@media(max-width: 608px){
+  .highlight-container{
+    display: none;
   }
 }
