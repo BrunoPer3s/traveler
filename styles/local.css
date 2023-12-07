@@ -15,7 +15,6 @@ section.main-image {
 
 main.city-container h1 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
@@ -33,7 +32,6 @@ main.city-container > p {
 
 main.city-container > h4 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -64,13 +62,11 @@ main.city-container > h4 {
 .working-hour .day p {
   color: var(--title);
   font-size: 14px;
-  font-family: Barlow;
   line-height: 26px;
 }
 
 .working-hour .day span {
   color: var(--title);
-  font-family: Barlow;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
@@ -114,7 +110,6 @@ footer.contact {
 
 .phone span {
   color: var(--title);
-  font-family: Barlow;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -136,7 +131,6 @@ section.address header {
 
 .address header h4 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -179,7 +173,6 @@ footer.rates {
 
 .rates header h4 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -214,7 +207,6 @@ footer.rates {
 
 .post-info h5 {
   color: var(--text);
-  font-family: Barlow;
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;

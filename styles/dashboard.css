@@ -33,7 +33,6 @@ div.card {
 
 div.card h2 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.875rem;

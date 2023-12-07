@@ -4,7 +4,6 @@
 
 main.news-container h1 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
@@ -22,7 +21,6 @@ main.news-container > p {
 
 main.news-container > h4 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -47,7 +45,6 @@ footer.news {
 
 .news header h4 {
   color: var(--title);
-  font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -86,7 +83,6 @@ footer.news {
 
 .post-info h5 {
   color: var(--text);
-  font-family: Barlow;
   font-size: 24px;
   max-width: 560px;
   font-weight: 600;
