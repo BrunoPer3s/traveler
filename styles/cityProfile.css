@@ -346,3 +346,9 @@ main.city-container footer .options {
     text-align: center;
   }
 }
+
+@media(max-width: 480px) {
+  .hightlight-container section + section {
+    display: none;
+  }
+}
