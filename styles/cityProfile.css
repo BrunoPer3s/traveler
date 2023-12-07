@@ -1,16 +1,18 @@
 #page {
   display: flex;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 #page-container {
   width: 100%;
 }
 
-section.backgroundImgContainer {
+.backgroundImgContainer {
   background: url("../assets/cityp.jpg");
   background-size: cover;
   background-position: top 65% right;
+  object-fit: cover;
   width: 100%;
   height: 21.25rem;
 }
@@ -19,7 +21,7 @@ section.backgroundImgContainer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 5rem 0 7.5rem;
+  margin: 5rem 0 7.5rem; 
 }
 
 .city-info h1 {
@@ -60,6 +62,9 @@ section.backgroundImgContainer {
   border-radius: 20px;
   border: 1px solid #DCE2E5;
   background: #fff;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
 }
 
 .info-card:nth-child(2) {
@@ -68,14 +73,12 @@ section.backgroundImgContainer {
 
 .info-card i {
   font-size: 2.5rem;
-  margin-left: 2rem;
   color: var(--main)
 }
 
 .info-card h4 {
   margin: 2rem 0;
   padding-top: 2rem;
-  padding-left: 2rem;
   border-top: 1px solid #DCE2E5;
   color: var(--title);
   font-family: Barlow;
@@ -90,15 +93,18 @@ section.backgroundImgContainer {
   line-height: 1.375rem;
   font-size: 0.875rem;
   display: inline-block;
-  margin-left: 2rem;
   max-width: 5.625rem;
+  text-align: center;
 }
 
-div.topRate {
+.topRate {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 main.city-container h3 {
@@ -112,6 +118,7 @@ main.city-container h3 {
 .place-card {
   width: 16rem;
   height: 19.1875rem;
+  flex-shrink: 0;
   border-radius: 16px;
   border: 1px solid #DCE2E5;
   background: #FFF;
@@ -167,6 +174,7 @@ div.highlight-container {
 div.highlight-container > section {
   padding: 2.875rem 2.875rem 2.875rem 4rem;
   width: 50%;
+  overflow: hidden;
 }
 
 div.highlight-container > section header {
@@ -230,7 +238,7 @@ header .emphasis span {
 }
 
 div.highlight-container section + section {
-  background: url("../assets/highlight.jpg");
+  /* background: url("../assets/highlight.jpg"); */
   background-size: cover;
   height: 100%;
 }
@@ -254,4 +262,93 @@ main.city-container footer .options {
   color: var(--text);
   font-family: Heebo;
   line-height: 1.375rem;
+  text-align: center;
+  padding-left: 0.5rem;
+}
+
+@media(max-width: 1024px){
+  main.city-container{
+    margin-top: 6rem;
+  }
+}
+
+
+@media(max-width: 800px){
+  .city-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0 7.5rem; 
+  }
+
+  .city-cards-info .info-card {
+    border-radius: 20px;
+    width: 7rem;
+    height: 15rem;
+    flex-direction: column;
+  }
+
+  .city-info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .info-card h4 {
+    font-size: 2rem;
+    height: 3rem;
+  }
+
+  div.highlight-container {
+    flex-direction: column;
+    height: 30rem;
+  }
+
+  div.highlight-container > section {
+    width: 100%;
+    overflow: hidden;
+    height: 60%;
+  }
+
+  div.highlight-container section + section {
+    height: 40%;
+    background-position:center left;
+  }
+  
+  main.city-container footer .options {
+    min-width: 25rem;
+  }
+}
+
+
+
+@media(max-width: 380px){
+  main.city-container > h3 {
+    text-align: center;
+  }
+
+  div.highlight-container section + section {
+    max-height: 35%;
+  }
+}
+
+@media(max-width: 650px){
+  footer.filter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer.filter h3{
+    padding-bottom: 1rem;
+  }
+
+  main.city-container footer .options span{
+    text-align: center;
+  }
+}
+
+@media(max-width: 480px) {
+  .hightlight-container section + section {
+    display: none;
+  }
 }

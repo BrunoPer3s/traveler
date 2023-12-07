@@ -1,155 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Heebo:wght@400;500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Heebo:wght@400;500&family=Roboto&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/local.css" />
+    <title>Dashboard</title>
 
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href="../styles/local.css">
-  <title>Dashboard</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
 
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
-
-<body>
-  <div id="page">
-    <aside>
-      <img src="../assets/logo.svg" alt="Logo">
-      <nav>
-        <a href="">
-          <i class="ph ph-map-pin-line"></i>
-        </a>
-        <a href="">
-          <i class="ph ph-squares-four"></i>
-        </a>
-        <a href="">
-          <i class="ph ph-chat"></i>
-        </a>
-      </nav>
-      <span></span>
-    </aside>
-    <section class="reset-layer"></section>
-    <main class="city-container wrapper">
-      <header class="dash-header wrapper">
-        <a href="./dashboard.html" class="return-button">
-          <i class="ph ph-arrow-left"></i>
-        </a>
-        <a class="add-button">
-          <i class="ph ph-dots-three-outline-vertical"></i>
-          Adicionar um local
-        </a>
-      </header>
-      <h1>Doce & Companhia</h1>
-      <p>O melhor lugar da cidade para você tomar um bom café. Fatias de tortas artesanais, bolos, lanches e biscoitos caseiros.</p>
-      <h4>Atendimento</h4>
-      <div class="working-hour">
-        <div class="day">
-          <p>Segunda</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Terça</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Quarta</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Quinta</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Sexta</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Sábado</p>
-          <span>08:00 - 18:00</span>
-        </div>
-        <div class="day">
-          <p>Domingo</p>
-          <span>08:00 - 18:00</span>
-        </div>
-      </div>
-      <footer class="contact">
-        <a href="" class="whatsapp">
-          <i class="ph ph-whatsapp-logo"></i>
-          <span>Entrar em contato</span>
-        </a>
-        <div class="phone">
-          <p>Telefone</p>
-          <span>(47) 3598 7815</span>
-        </div>
-      </footer>
-      <section class="address">
-        <header>
-          <h4>Endereço</h4>
-          <a href="">
-            <span>Ver no Google maps</span>
+  <body>
+    <div id="page">
+      <aside>
+        <img src="../assets/logo.svg" alt="Logo" />
+        <nav>
+          <a href="./cadastro.html">
+            <i class="ph ph-user-plus"></i>
           </a>
-        </header>
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14922.721678353022!2d-41.54606009018862!3d-20.76374332774176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbebc3e50e781f%3A0x7bb8edafd6ede49f!2sAlegre%2C%20ES%2C%2029500-000!5e0!3m2!1spt-BR!2sbr!4v1701647415022!5m2!1spt-BR!2sbr"
-            width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p>Rua 7 de Setembro, 319 - Jardim América
-        89160-170</p>
-      </section>
-      <footer class="rates">
-        <header>
-          <h4>Avaliações</h4>
-          <a href="">
-            <span>Adicionar</span>
-            <span>Ver todas</span>
+          <a href="./dashboard.html">
+            <i class="ph ph-squares-four"></i>
           </a>
-        </header>
-        <main>
-          <div class="post">
-            <img src="https://github.com/brunoper3s.png" alt="">
-            <div class="post-content">
-              <div class="post-info">
-                <h5>João da Silva</h5>
-                <img src="../assets/Stars.png" alt="">
-              </div>
-              <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+          <a href="./contato.html">
+            <i class="ph ph-phone-plus"></i>
+          </a>
+        </nav>
+        <span></span>
+      </aside>
+      <section class="reset-layer"></section>
+        <main class="city-container wrapper">
+          <header class="dash-header wrapper">
+            <a href="./cityProfile.html" class="return-button">
+              <i class="ph ph-arrow-left"></i>
+            </a>
+            <nav>
+              <a class="add-button" href="../pages/cadastro.html">
+                <i class="ph ph-dots-three-outline-vertical"></i>
+                Cadastrar
+              </a>
+              <a class="add-button" href="../pages/cadastro.html">
+                <i class="ph ph-dots-three-outline-vertical"></i>
+                Fale Conosco
+              </a>
+            </nav>
+          </header>
+          <h1 class="introduction">Doce & Companhia</h1>
+          <p class="introduction">
+            O melhor lugar da cidade para você tomar um bom café. Fatias de tortas artesanais, bolos, lanches e
+            biscoitos caseiros.
+          </p>
+          <h4>Atendimento</h4>
+          <div class="working-hour">
+            <div class="day">
+              <p>Segunda</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Terça</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Quarta</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Quinta</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Sexta</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Sábado</p>
+              <span>08:00 - 18:00</span>
+            </div>
+            <div class="day">
+              <p>Domingo</p>
+              <span>08:00 - 18:00</span>
             </div>
           </div>
-          <div class="post">
-            <img src="https://github.com/ericbernardes.png" alt="">
-            <div class="post-content">
-              <div class="post-info">
-                <h5>João da Silva</h5>
-                <img src="../assets/Stars.png" alt="">
-              </div>
-              <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+          <footer class="contact">
+            <a href="" class="whatsapp">
+              <i class="ph ph-whatsapp-logo"></i>
+              <span>Entrar em contato</span>
+            </a>
+            <div class="phone">
+              <p>Telefone</p>
+              <span>(47) 3598 7815</span>
             </div>
-          </div>
-          <div class="post">
-            <img src="https://github.com/sahuanp.png" alt="">
-            <div class="post-content">
-              <div class="post-info">
-                <h5>João da Silva</h5>
-                <img src="../assets/Stars.png" alt="">
-              </div>
-              <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+          </footer>
+          <section class="address">
+            <header>
+              <h4>Endereço</h4>
+              <a href="">
+                <span>Ver no Google maps</span>
+              </a>
+            </header>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14922.721678353022!2d-41.54606009018862!3d-20.76374332774176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbebc3e50e781f%3A0x7bb8edafd6ede49f!2sAlegre%2C%20ES%2C%2029500-000!5e0!3m2!1spt-BR!2sbr!4v1701647415022!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="250px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-          </div>
+            <p>Rua 7 de Setembro, 319 - Jardim América 89160-170</p>
+          </section>
+          <footer class="rates">
+            <header>
+              <h4>Avaliações</h4>
+              <a href="">
+                <span>Adicionar</span>
+                <span>Ver todas</span>
+              </a>
+            </header>
+            <main>
+              <div class="post">
+                <img src="https://github.com/brunoper3s.png" alt="" />
+                <div class="post-content">
+                  <div class="post-info">
+                    <h5>João da Silva</h5>
+                    <img src="../assets/Stars.png" alt="" />
+                  </div>
+                  <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+                </div>
+              </div>
+              <div class="post">
+                <img src="https://github.com/ericbernardes.png" alt="" />
+                <div class="post-content">
+                  <div class="post-info">
+                    <h5>João da Silva</h5>
+                    <img src="../assets/Stars.png" alt="" />
+                  </div>
+                  <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+                </div>
+              </div>
+              <div class="post">
+                <img src="https://github.com/sahuanp.png" alt="" />
+                <div class="post-content">
+                  <div class="post-info">
+                    <h5>João da Silva</h5>
+                    <img src="../assets/Stars.png" alt="" />
+                  </div>
+                  <p>Grande variedade de bolos, cucas, tortas e algumas opções de salgados.</p>
+                </div>
+              </div>
+            </main>
+          </footer>
         </main>
-      </footer>
-    </main>
-    <section class="main-image"></section>
-  </div>
-</body>
-
+        <section class="main-image"></section>
+    </div>
+  </body>
 </html>

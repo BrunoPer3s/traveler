@@ -51,11 +51,25 @@ main.introduction a {
   border-radius: 0.5rem;
   color: #fff;
   font-weight: 600;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: background-color 0.2s;
+}
+
+
+@media (max-width: 650px){
+  section.image-container{
+    display: none;
+  }
+}
+
+@media(max-width: 1024px){
+  section.image-container{
+    background-image: url('../assets/bgcut.png');
+  }
 }
 
 @media (max-width: 1340px) {

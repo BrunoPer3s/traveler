@@ -1,120 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Heebo:wght@400;500&family=Roboto&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Heebo:wght@400;500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="../styles/dashboard.css">
-  <link rel="stylesheet" href="../styles/global.css">
-  <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
 
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
-<body>
-  <div id="page">
-    <aside>
-      <img src="../assets/logo.svg" alt="Logo">
-      <nav>
-        <a href="">
-          <i class="ph ph-map-pin-line"></i>
-        </a>
-        <a href="">
-          <i class="ph ph-squares-four"></i>
-        </a>
-        <a href="">
-          <i class="ph ph-chat"></i>
-        </a>
-      </nav>
-      <span></span>
-    </aside>
-    <section class="reset-layer"></section>
-    <div id="dashboard">
-      <header class="dash-header">
-        <h1>Cidades</h1>
-        <a href="">Adicionar um perfil</a>
-      </header>
-      <main class="gallery">
-        <a href="./cityProfile.html">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
-            </div>
+    <style>
+      .block .noticias {
+        margin-left: 1rem;
+      }
+    </style>
+    <title>Dashboard</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div id="page">
+      <aside>
+        <img src="../assets/logo.svg" alt="Logo" />
+        <nav>
+          <a href="../pages/cadastro.html">
+            <i class="ph ph-user-plus"></i>
+          </a>
+          <a href="../pages/dashboard.html">
+            <i class="ph ph-squares-four"></i>
+          </a>
+          <a href="../pages/contato.html">
+            <i class="ph ph-phone-plus"></i>
+          </a>
+        </nav>
+        <span></span>
+      </aside>
+      <section class="reset-layer"></section>
+      <div id="dashboard">
+        <header class="dash-header">
+          <h1>Lugares</h1>
+          <div class="block">
+            <a href="../pages/desenvolvimento.html">Desenvolvimento</a>
+            <a href="../pages/news.html" class="noticias">Notícias</a>
           </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+        </header>
+        <main class="gallery">
+          <a href="./lugares/Bahia/bahia.html">
+            <div class="card">
+              <img src="./lugares/Bahia/imagens/bahiacapa.jpg" alt="" />
+              <div class="info">
+                <h2>Bahia</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/Mato Grosso/mato.html">
+            <div class="card">
+              <img src="./lugares/Mato Grosso/imagens/matocapa.jpg" alt="" />
+              <div class="info">
+                <h2>Mato Grosso do Sul</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/Janeiro/rio.html">
+            <div class="card">
+              <img src="./lugares/Janeiro/imagens/rio.jpg" alt="" />
+              <div class="info">
+                <h2>Rio de Janeiro</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/MinasGerais/minas.html">
+            <div class="card">
+              <img src="./lugares/MinasGerais/imagens/minascapa.jpg" alt="" />
+              <div class="info">
+                <h2>Minas Gerais</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/Marataizes/marataizes.html">
+            <div class="card">
+              <img src="./lugares/Marataizes/imagens/maratacapa.jpg" alt="" />
+              <div class="info">
+                <h2>Marataízes</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/Vitoria/vitoria.html">
+            <div class="card">
+              <img src="./lugares/Vitoria/imagens/vitoriacapa.jpg" alt="" />
+              <div class="info">
+                <h2>Vitória</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <img src="../assets/image-1.png" alt="">
-            <div class="info">
-              <h2>Alegre</h2>
-              <span>21 locais</span>
+          </a>
+          <a href="./lugares/Curitiba/curitiba.html">
+            <div class="card">
+              <img src="./lugares/Curitiba/imagens/curitibacapa.jpg" alt="" />
+              <div class="info">
+                <h2>Curitiba</h2>
+                <span>5 locais</span>
+              </div>
             </div>
-          </div>
-        </a>
-      </main>
+          </a>
+          <a href="./lugares/Maranhao/Maranhao.html">
+            <div class="card">
+              <img src="./lugares/Maranhao/imagens/maranhaocapa.jpg" alt="" />
+              <div class="info">
+                <h2>Maranhão</h2>
+                <span>5 locais</span>
+              </div>
+            </div>
+          </a>
+        </main>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

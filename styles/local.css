@@ -239,3 +239,32 @@ footer.rates {
   max-width: 400px;
   margin-top: 16px;
 }
+
+/* .all{
+  display: flex;
+} */
+
+@media(max-width: 1024px){
+  main.city-container{
+    margin-top: 6rem;
+  }
+
+  .introduction{
+    text-align: center;
+  }
+
+  .main-image{
+    display: none;
+  } 
+}
+
+@media(max-width: 375px){
+  .contact{
+    flex-direction: column;
+  }
+
+  footer.contact p{
+    padding-top: 1rem;
+    text-align: center;
+  }
+}

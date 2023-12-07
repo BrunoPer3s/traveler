@@ -29,18 +29,6 @@ a {
   color: inherit;
 }
 
-@media (max-width: 1250px) {
-  html {
-    font-size: 87.5%;
-  }
-
-}
-
-/* @media (max-width: 720px) {
-  html {
-  }
-} */
-
 #page {
   display: flex;
   padding-bottom: 2rem;
@@ -104,6 +92,11 @@ header.dash-header {
   padding: 1.5625rem 1rem;
 }
 
+header.dash-header nav {
+  display: flex;
+  align-items: center;
+}
+
 header.dash-header a.return-button {
   display: flex;
   align-items: center;
@@ -131,4 +124,74 @@ header.dash-header a.add-button {
   line-height: 1.625rem;
   padding: 0.6875rem 2rem;
   border-radius: 10px;
+}
+
+header.dash-header a.add-button + a.add-button {
+  background-color: var(--main);
+  margin-left: 1rem;
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 1024px){
+  aside {
+    width: 100%;
+    height: 6rem;
+    background: var(--main);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5625rem 0;
+  }
+
+  aside nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  aside img{
+    min-width: 4rem;
+  }
+
+  #dashboard, #page-container, #city-container wrapper{
+    margin-top: 6rem;
+    height: 100%;
+  }
+  
+  #dashboard{
+    margin: 6rem auto auto auto;
+  }
+
+
+  aside nav a + a{
+    margin-top: 0;
+  }
+
+  aside nav a{
+    margin-right: 2rem;
+  }
+
+  section.reset-layer {
+    display: none;
+  }
+}
+
+@media(max-width: 380px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media(max-width: 608px){
+  .highlight-container{
+    display: none;
+  }
 }
